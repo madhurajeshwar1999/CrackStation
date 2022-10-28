@@ -25,9 +25,9 @@ final class CrackStationTests: XCTestCase {
         XCTAssertNil(value)
     }
     func testExample8() throws {
-        let lookupTable2 = try CrackStation.loadDictionaryFromDisk()
+        
         let hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709"
-        let value = lookupTable2[hash]
+        let value = CrackStation().decrypt(shaHash:hash)
         XCTAssertEqual(value, nil)
     }
 /*
