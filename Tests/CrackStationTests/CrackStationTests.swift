@@ -24,7 +24,12 @@ final class CrackStationTests: XCTestCase {
         let value = lookupTable2[hash]
         XCTAssertNil(value)
     }
-    
+    func testExample8() throws {
+        let lookupTable2 = try CrackStation.loadDictionaryFromDisk()
+        let hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        let value = lookupTable2[hash]
+        XCTAssertEqual(value, nil)
+    }
 /*
     //TEST CASES FOR TWO STRING COMBO
     func testExample4() throws {
