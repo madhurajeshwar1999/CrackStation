@@ -7,7 +7,8 @@ var digits_arr = [...Array(10).keys()]
 
 const alpha = Array.from(Array(26)).map((e, i) => i + 65);
 const alpha2 =  Array.from(Array(26)).map((e, i) => i + 97);
-
+const empty  = ""
+dict[crypto.createHash('sha1').update(empty).digest('hex')] = null
 const alphabet_arr = alpha.map((x) => String.fromCharCode(x));
 const lower_alphabet= alpha2.map((x)=>String.fromCharCode(x));
 intializeDict(digits_arr,dict)
