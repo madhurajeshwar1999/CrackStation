@@ -17,9 +17,9 @@ intializeDict(lower_alphabet,dict)
 
 
 //POC  2 changes - commented
-//twoString()
+twoString()
 
-/*function twoString(){
+function twoString(){
     for(var letter of alphabet_arr){
         for(var letter2 of alphabet_arr){
             dict[crypto.createHash('sha1').update(letter+letter2).digest('hex')] = letter+letter2
@@ -40,7 +40,7 @@ intializeDict(lower_alphabet,dict)
         }
     }
     return dict
-}*/
+}
 function intializeDict(arr,dict) {
     for(i=0;i<arr.length;i++)
     {
