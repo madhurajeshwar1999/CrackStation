@@ -1,13 +1,18 @@
 import Foundation
-public class CrackStation: Decrypter{
-    public private(set) var text = "Hello, World!"
+
+
+public class CrackStation: Decrypter {
+
+    private let lookUpTable: [String:String] 
 
     required public init() {
+        do {
+            lookUpTable = try CrackStation.loadDictionaryFromDisk()
+        } catch {}
     }
 
-    public func decrypt(shaHash: String) -> String?{
-        let lookUptable = try? CrackStation.loadDictionaryFromDisk()
-        guard let ans = lookUptable?[shaHash] else {return nil}
+    public func decrypt(shaHash: String) -> String? {
+        let ans = lookUpTable[shaHash]
         return ans
     }
 
