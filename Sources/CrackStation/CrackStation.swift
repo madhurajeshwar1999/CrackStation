@@ -3,9 +3,10 @@ import Foundation
 
 public class CrackStation: Decrypter {
 
-    private let lookUpTable: [String:String] 
+    private var lookUpTable: [String:String] = [:]
 
-    required public init() {
+     required public  init() 
+    {
         do {
             lookUpTable = try CrackStation.loadDictionaryFromDisk()
         } catch {}
