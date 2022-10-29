@@ -7,8 +7,7 @@ public class CrackStation: Decrypter{
 
     public func decrypt(shaHash: String) -> String?{
         let lookUptable = try? CrackStation.loadDictionaryFromDisk()
-        let ans:String?
-        ans = lookUptable?[shaHash]
+        guard let ans = lookUptable?[shaHash] else {return nil}
         return ans
     }
 
