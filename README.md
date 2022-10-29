@@ -4,8 +4,8 @@
 CrackStation is an application which is developed to decrypt the hash given to it as input and generate a plain text string  . 
 
 **VERSION**
-1.0.0 - tag corresponding to release 1 where we have changes for single character decryption
-2.0.0 - tag corresponding to release 2 where we have changes for two 
+1.0.0 - tag corresponding to release 1 where we have changes for single character decryption\n
+2.0.0 - tag corresponding to release 2 where we have changes for two characters
 
 **FILES**
 
