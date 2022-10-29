@@ -1,5 +1,20 @@
 # CrackStation
 
+**OVERVIEW**
+CrackStation is an application which is developed to decrypt the hash given to it as input and generate a plain text string  . 
+
+**VERSION**
+1.0.0 - tag corresponding to release 1 where we have changes for single character decryption
+
+**FILES**
+
+Main File  - CrackStation.swift (Implements Interface Decrypter)
+Interface  - Decrypter.swift (contains the function decrypt which takes a string which is the hash and generates the password .This implementation logic is provided inside CrackStation)
+Standalone file - sample.js (written in js using framework express and environment node)
+
+
+**INSTRUCTIONS TO RUN**
+
 CrackStation has a folder named
     1. Sources
   
@@ -8,14 +23,20 @@ CrackStation has a folder named
 
     Instructions to run sample.js
 
-    To run sample.js we need to enter the following command
+    2. To run sample.js we need to enter the following command
         node sample.js
-    Post which we get data.jsonfile generated
-      This file generated is accessed  inside crackStation.swift in function loadDictionaryFromDisk()
 
-    In the Tests folder we have the CrackStationTests.swift where we have 3 test cases written which check for the decrypted hash value with that of the value given using XAssertEqual() 
+    3. Post which we get data.jsonfile generated
+      This file generated is accessed  inside CrackStation.swift in function loadDictionaryFromDisk()
+    4. The dictionary is initalized in init() usinf the loadDictionaryFromDisk() method which is static
+
+    5. The decrypt method is implemented to generated the string from the hash by fetching  the value from dictionary using the key provided to it . In case we don't find any key corresponding to this key it returns nil .
+
+    In the Tests folder we have the CrackStationTests.swift where we have 4 test cases written which check for the decrypted hash value with that of the value given using XAssertEqual() 
     This can be checked using the command
     
     swift test
+
+**AUTHOR :**
 NAME - MADHU VENKATA RAJA RAJESHWAR
-OREGON MAIL -madhuv@oregonstate.edu
+MAIL -madhuv@oregonstate.edu
