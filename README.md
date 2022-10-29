@@ -39,6 +39,10 @@ CrackStation has a folder named
     swift test
 
 **GIT LINK**
+URL -`git@github.com:madhurajeshwar1999/CrackStation.git`
+
+add the above URL in git `package.swift`
+
 
 
 **AUTHOR :**
