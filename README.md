@@ -60,7 +60,7 @@ The Crack Station application can be used to decrypt unsalted hashes of strings(
 ### **Swift Package Manager**
 The <a href="https://www.swift.org/package-manager/">Swift Package Manager</a> is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-Once , you have swift package set up, add CrackStation to the list of dependencies in your <mark style="background-color: #696969"><span style="color: Gainsboro;">Package.swift</mark></span> file :
+Once , you have swift package set up, add CrackStation to the list of dependencies in your <mark style="background-color: #696969"><span style="color: Gainsboro;">`Package.swift`</mark></span> file :
 ```swift
 dependencies: [
         .package(url: "https://github.com/madhurajeshwar1999/CrackStation", from:"2.1.0")
@@ -75,7 +75,7 @@ dependencies: [
 
 ### **The API**
 
-The decrypt protocol has two methods <mark style="background-color: #696969"><span style="color: Gainsboro;">init</mark></span> and   <mark style="background-color: #696969"><span style="color: Gainsboro;">decrypt</mark></span> below are their signatures
+The decrypt protocol has two methods <mark style="background-color: #696969"><span style="color: Gainsboro;">`init`</mark></span> and   <mark style="background-color: #696969"><span style="color: Gainsboro;">`decrypt`</mark></span> below are their signatures
 
 ``` swift 
       init()
