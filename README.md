@@ -4,10 +4,6 @@ CrackStation is an application which is developed to decrypt the hash given to i
 
 
 ### **OVERVIEW**
-
-<br>
-<br>
-
 ### **VERSION**
 **1.0.0**
  Tag corresponding to release 1 where we have changes for single character decryption
