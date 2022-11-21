@@ -5,6 +5,7 @@ final class CrackStationTests: XCTestCase {
    func testExample() throws {
 
       let lookupTable2 = try CrackStation.loadDictionaryFromDisk()
+      print(lookUpTable.count)
       let hash = "95cb0bfd2977c761298d9624e4b4d4c72a39974a"
       let value = lookupTable2[hash]
       print("Type :",type(of:value))
