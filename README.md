@@ -1,9 +1,9 @@
 ## **CrackStation, A Decrypter implementation**
+CrackStation is an application which is developed to decrypt the hash given to it as input and generate a plain text string . 
 <hr>
 
+
 ### **OVERVIEW**
-<hr>
-CrackStation is an application which is developed to decrypt the hash given to it as input and generate a plain text string . 
 
 <br>
 <br>
