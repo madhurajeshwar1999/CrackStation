@@ -25,6 +25,8 @@ Standalone file - sample.js (written in js using framework express and environme
 **INSTRUCTIONS TO RUN**
  
 CrackStation has a folder named
+
+
     1. Sources
  
     Inside sources we have a file named sample.js which is used to generate the hashes and store the dictionary into a file named data.json
