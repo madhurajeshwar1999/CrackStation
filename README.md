@@ -7,16 +7,18 @@ CrackStation is an application which is developed to decrypt the hash given to i
 Crack Station application has 3 versions which each release version achieving a different objective .
 ### **VERSION**
 **1.0.0**
- Tag corresponding to release 1 where we have changes for single character decryption
+ Tag corresponding to release 1 where we have changes for single character decryption.List of characters include all alphabets(lower and upper case) and digits (0-9).
 
-**2.0.0** - Tag corresponding to release 2 where we have changes for two characters
+**2.0.0** - Tag corresponding to release 2 where we have changes for two characters decryption.List of characters include all alphabets(lower and upper case) , digits (0-9) and their combinations.
 
-**2.1.0** -  Tag corresponding to release 2.1.0  where we have changes for three characters.
+**2.1.0** -  Tag corresponding to release 2.1.0  where we have changes upto three characters decryption. List of characters include all alphabets(lower and upper case) , digits (0-9), two additional symbols(!,?) and their combinations.
  
 **FILES**
  
 Main File  - CrackStation.swift (Implements Interface Decrypter)
+<br>
 Interface  - Decrypter.swift (contains the function decrypt which takes a string which is the hash and generates the password .This implementation logic is provided inside CrackStation)
+<br>
 Standalone file - sample.js (written in js using framework express and environment node)
  
  
