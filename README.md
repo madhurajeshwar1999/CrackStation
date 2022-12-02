@@ -53,7 +53,7 @@ CrackStation has a folder named
 
 ### **Mission Statement**
 <hr>
-The Crack Station application can be used to decrypt unsalted hashes of strings(upto length 3) and compare the result with that of expected result.
+The mission is to emphasize on the fact of having complicated passwords and unique passwords  as a must. The more plain one's password is the more easier it gets to hack into their system/account .
 
 <br>
 
