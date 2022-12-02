@@ -3,13 +3,15 @@ import Foundation
 
 public class CrackStation: Decrypter {
 
-    private var lookUpTable: [String:String] = [:]
+    private let lookUpTable: [String:String] 
 
      required public  init() 
     {
         do {
             lookUpTable = try CrackStation.loadDictionaryFromDisk()
-        } catch {}
+        } catch {
+            lookUpTable = [:]
+        }
     }
 
     public func decrypt(shaHash: String) -> String? {
@@ -18,7 +20,7 @@ public class CrackStation: Decrypter {
     }
 
 
-    static func loadDictionaryFromDisk() throws -> [String : String] {
+    private static func loadDictionaryFromDisk() throws -> [String : String] {
         guard let path = Bundle.module.url(forResource: "data", withExtension: "json") else { return [:] }
         let data = try Data(contentsOf: path)
         
