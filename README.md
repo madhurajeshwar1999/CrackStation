@@ -4,8 +4,9 @@ CrackStation is an application which is developed to decrypt the hash given to i
 
 
 ### **OVERVIEW**
-Crack Station application has 3 versions which each release version achieving a different objective .
-### **VERSION**
+Crack Station is an application which decrypts strings upto length 3 which are  matching the regex [A-Za-z0-9?!]{1,3} , and are encrypted using SHA-1 or SHA-256. Crack Station application has 3 versions with each release version achieving a different objective .
+
+#### **VERSION**
 **1.0.0**
  Tag corresponding to release 1 where we have changes for single character decryption.List of characters include all alphabets(lower and upper case) and digits (0-9).
 
@@ -28,10 +29,6 @@ CrackStation has a folder named
 
 1. Sources
 Inside sources we have a file named sample.js which is used to generate the hashes and store the dictionary into a file named data.json
- 
- 
-Instructions to run sample.js
- 
 2. To run sample.js we need to enter the following command
         node sample.js
  
@@ -41,7 +38,7 @@ Instructions to run sample.js
  
 5. The decrypt method is implemented to generated the string from the hash by fetching  the value from dictionary using the key provided to it . In case we don't find any key corresponding to this key it returns nil .
  
-In the Tests folder we have the CrackStationTests.swift where we have 4 test cases written which check for the decrypted hash value with that of the value given using XAssertEqual() This can be checked using the command swift test
+In the Tests folder we have the CrackStationTests.swift where we have 6 test cases written which check for the decrypted hash value with that of the value given using XAssertEqual() This can be checked using the command swift test
 
 
 <br>
