@@ -53,7 +53,7 @@ CrackStation has a folder named
 
 ### **Mission Statement**
 <hr>
-The mission is to emphasize on the fact of having complicated passwords and unique passwords  as a must. The more plain one's password is the more easier it gets to hack into their system/account .
+The mission is to emphasize on the fact of having complicated passwords and unique passwords  as a must. The more plain one's password (unsalted ) <a href ="https://en.wikipedia.org/wiki/Salt_(cryptography)"></a> is the more easier it gets to hack into their system/account .
 
 <br>
 
